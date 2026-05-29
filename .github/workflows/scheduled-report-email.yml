@@ -1,5 +1,6 @@
 name: Scheduled Report Email
-
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true  # 强制使用Node.js 24
 on:
   schedule:
     - cron: "0 0 * * *"
