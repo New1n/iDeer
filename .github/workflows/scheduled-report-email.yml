@@ -85,6 +85,7 @@ jobs:
       INPUT_REPORT_TITLE: ${{ github.event.inputs.report_title }}
       INPUT_RECEIVER: ${{ github.event.inputs.receiver }}
       INPUT_SEND_EMAIL: ${{ github.event.inputs.send_email }}
+      RSS_MAX_ITEMS: 30
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
